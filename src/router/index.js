@@ -20,7 +20,17 @@ const Router = () => {
       />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Register" component={Register} />
+      <Stack.Screen
+        name="Register"
+        component={Register}
+        options={{
+          title: 'Akun',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitleAlign: 'center',
+        }}
+      />
     </Stack.Navigator>
   );
 };

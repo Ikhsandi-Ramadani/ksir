@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableOpacity, StyleSheet} from 'react-native';
-import { colors } from '../../../utils/colors';
+import {colors} from '../../../utils/colors';
 
 const Button = ({title, onPress}) => {
   return (
@@ -16,8 +16,9 @@ const styles = StyleSheet.create({
   wrapper: {
     component: {
       backgroundColor: colors.default,
-      borderRadius: 25,
+      borderRadius: 10,
       paddingVertical: 11,
+      // maxWidth: 328,
     },
   },
   text: {
